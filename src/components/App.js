@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./../styles/App.css";
 
 const App = () => {
-  const [name, setName] = useState("Hello");
+  const [name, setName] = useState("");
 
-  const handleChange = (e) => setName(e.target.value);
+  function handleChange(e) {
+    setName("Hello " + e.target.value);
+  }
 
   return (
     <div>
@@ -12,6 +14,7 @@ const App = () => {
       <label>Enter your name:</label>
       <br />
       <input type="text" onChange={handleChange}></input>
+
       <p>{name}</p>
     </div>
   );
