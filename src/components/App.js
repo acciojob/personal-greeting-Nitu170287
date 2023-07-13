@@ -11,7 +11,7 @@ const App = () => {
       {/* Do not remove the main div */}
       <label>Enter your name:</label>
       <br />
-      <input type="text" onChange={(e)=>setName("Hello " + e.target.value)}></input>
+      <input type="text" onChange={(e)=>setName("Hello " + e.target.value +"!")}></input>
 
       <p>{name}</p>
     </div>
